@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moira</title>
+  <meta name="viewport" content="width=290, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <nav>
+    
+    <div id="logo"><a href="index.php?page=home"><img src="assets/images/logo.png"></a></div>
+    <label for="drop" class="toggle toggle-icon"><i class="menu-icon"></i></label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+        <li><a href="index.php?page=home">Home</a></li>
+        <li class="have-children"><a href="#">Videos</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Gallery</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Ringtones</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Apps</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+
+        <li><a href="index.php?page=contact">Contact</a></li>
+      <a href="" class="login  hidden-desktop"><button class="btn btn-login"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1Ni4zNjggNDU2LjM2OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTMyNC4xOTQsMjIwLjUyNmMtNi4xNzIsNy43NzItMTMuMTA2LDE0Ljk0Ny0yMS4wNywyMS40MjNjNDUuNDU5LDI2LjA3Niw3Ni4xNDksNzUuMSw3Ni4xNDksMTMxLjE1OCAgICAgYzAsMzAuMjktNjYuMzY3LDU0LjAxOC0xNTEuMDksNTQuMDE4cy0xNTEuMDktMjMuNzI4LTE1MS4wOS01NC4wMThjMC01Ni4wNTgsMzAuNjktMTA1LjA4Miw3Ni4xNDktMTMxLjE1OCAgICAgYy03Ljk2My02LjQ3Ni0xNC44OTctMTMuNjUtMjEuMDctMjEuNDIzYy01MC42MjQsMzEuOTY5LTg0LjMyMiw4OC40MS04NC4zMjIsMTUyLjU4MWMwLDE5LjQzOSwxMC42NDQsNDYuNTMsNjEuMzU1LDY1LjIwMSAgICAgYzMxLjYzMiwxMS42NDcsNzMuODg2LDE4LjA2LDExOC45NzksMTguMDZjNDUuMDkzLDAsODcuMzQ3LTYuNDEzLDExOC45NzktMTguMDZjNTAuNzEtMTguNjcxLDYxLjM1NS00NS43NjIsNjEuMzU1LTY1LjIwMSAgICAgQzQwOC41MTYsMzA4LjkzNiwzNzQuODE4LDI1Mi40OTUsMzI0LjE5NCwyMjAuNTI2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjI4LjE4MiwyMzkuNzk1YzU2LjgzMywwLDEwMC41OTctNTQuOTM2LDEwMC41OTctMTE5Ljg5N0MzMjguNzc5LDU0LjkwNywyODQuOTkzLDAsMjI4LjE4MiwwICAgICBjLTU2LjgzMywwLTEwMC41OTcsNTQuOTM2LTEwMC41OTcsMTE5Ljg5N0MxMjcuNTg1LDE4NC44ODgsMTcxLjM3MiwyMzkuNzk1LDIyOC4xODIsMjM5Ljc5NXogTTIyOC4xODIsMjkuMjQzICAgICBjMzkuMzQ0LDAsNzEuMzU0LDQwLjY2Nyw3MS4zNTQsOTAuNjU0cy0zMi4wMSw5MC42NTQtNzEuMzU0LDkwLjY1NHMtNzEuMzU0LTQwLjY2Ny03MS4zNTQtOTAuNjU0UzE4OC44MzgsMjkuMjQzLDIyOC4xODIsMjkuMjQzICAgICB6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPC9nPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=">
+        Login </button></a>
+    </ul>
+    <a href="" class="login hidden-mobile"><button class="btn btn-login"><img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1Ni4zNjggNDU2LjM2OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTMyNC4xOTQsMjIwLjUyNmMtNi4xNzIsNy43NzItMTMuMTA2LDE0Ljk0Ny0yMS4wNywyMS40MjNjNDUuNDU5LDI2LjA3Niw3Ni4xNDksNzUuMSw3Ni4xNDksMTMxLjE1OCAgICAgYzAsMzAuMjktNjYuMzY3LDU0LjAxOC0xNTEuMDksNTQuMDE4cy0xNTEuMDktMjMuNzI4LTE1MS4wOS01NC4wMThjMC01Ni4wNTgsMzAuNjktMTA1LjA4Miw3Ni4xNDktMTMxLjE1OCAgICAgYy03Ljk2My02LjQ3Ni0xNC44OTctMTMuNjUtMjEuMDctMjEuNDIzYy01MC42MjQsMzEuOTY5LTg0LjMyMiw4OC40MS04NC4zMjIsMTUyLjU4MWMwLDE5LjQzOSwxMC42NDQsNDYuNTMsNjEuMzU1LDY1LjIwMSAgICAgYzMxLjYzMiwxMS42NDcsNzMuODg2LDE4LjA2LDExOC45NzksMTguMDZjNDUuMDkzLDAsODcuMzQ3LTYuNDEzLDExOC45NzktMTguMDZjNTAuNzEtMTguNjcxLDYxLjM1NS00NS43NjIsNjEuMzU1LTY1LjIwMSAgICAgQzQwOC41MTYsMzA4LjkzNiwzNzQuODE4LDI1Mi40OTUsMzI0LjE5NCwyMjAuNTI2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjI4LjE4MiwyMzkuNzk1YzU2LjgzMywwLDEwMC41OTctNTQuOTM2LDEwMC41OTctMTE5Ljg5N0MzMjguNzc5LDU0LjkwNywyODQuOTkzLDAsMjI4LjE4MiwwICAgICBjLTU2LjgzMywwLTEwMC41OTcsNTQuOTM2LTEwMC41OTcsMTE5Ljg5N0MxMjcuNTg1LDE4NC44ODgsMTcxLjM3MiwyMzkuNzk1LDIyOC4xODIsMjM5Ljc5NXogTTIyOC4xODIsMjkuMjQzICAgICBjMzkuMzQ0LDAsNzEuMzU0LDQwLjY2Nyw3MS4zNTQsOTAuNjU0cy0zMi4wMSw5MC42NTQtNzEuMzU0LDkwLjY1NHMtNzEuMzU0LTQwLjY2Ny03MS4zNTQtOTAuNjU0UzE4OC44MzgsMjkuMjQzLDIyOC4xODIsMjkuMjQzICAgICB6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPC9nPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=">
+  Login </button></a>
+</nav>
+</header>
+    <main>
+      <div class="container">
+        <!--Here starts the home page-->
+        <div class="content">
+     <div class="swiper-container Slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="caption">
+                  <h2>Fortnite</h2>
+                  <p>Battle Royale</p><span class="tag">Games</span><a href=""><button
+                      class="btn color-btn blue">Open</button></a>
+                </div>
+                <a href=""> <picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/slider/fortnite-small.jpg">
+                  <source media="(min-width: 769px)" srcset="assets/images/slider/fortnite.jpg">
+                  <img src="assets/images/slider/fortnite.jpg" alt="">
+                </picture></a>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="caption">
+                  <h2>Fitness</h2>
+                  <p>Get a healthy body</p><span class="tag">Be ready</span><a href=""><button
+                      class="btn color-btn green">Open</button></a>
+                </div> <a href=""><picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/slider/lifestyle-small.jpg">
+                  <source media="(min-width: 769px)" srcset="assets/images/slider/lifestyle.jpg">
+                  <img src="assets/images/slider/lifestyle.jpg" alt="">
+                </picture></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="caption">
+                  <h2>Roblox</h2>
+                  <p>The "It" game</p><span class="tag">Games</span><a href=""><button
+                      class="btn color-btn blue">Open</button></a>
+                </div><a href=""> <picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/slider/roblox-small.jpg">
+                  <source media="(min-width: 769px)" srcset="assets/images/slider/roblox.jpg">
+                  <img src="assets/images/slider/roblox.jpg" alt="">
+                </picture></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="caption">
+                  <h2>Bruno Mars</h2>
+                  <p>Music videos</p><span class="tag">Stream</span><a href=""><button
+                      class="btn color-btn purple">Open</button></a>
+                </div><a href=""><picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/slider/music-small.jpg">
+                  <source media="(min-width: 769px)" srcset="assets/images/slider/music.jpg">
+                  <img src="assets/images/slider/music.jpg" alt="">
+               </picture></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="caption">
+                  <h2>Recipes</h2>
+                  <p>Delicious food for every mood</p><span class="tag">Be ready</span><a href=""><button
+                      class="btn color-btn green">Open</button></a>
+                </div><a href=""><picture>
+                  <source media="(max-width: 768px)" srcset="assets/images/slider/recipes-small.jpg">
+                  <source media="(min-width: 769px)" srcset="assets/images/slider/recipes.jpg">
+                  <img src="assets/images/slider/recipes.jpg" alt="">
+                </picture></a>
+              </div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+      <div class="container">
+        <!--Here starts the home page-->
+        <div class="content">
+
+          <div class="intro">
+            <h1>Moira, Pictures</h1>
+            <h2>Cool wallpapers for your mobile</h2>
+           
+          <section class="section container grid-gallery fit-grid-gallery gallery popup-gallery wow fadeIn" id="gallery">
+    <div class="card-columns container mt-4 animated pulse mb-5 popup-gallery">
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/gQPc9VaoZV9nIPbWZuIS.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/gQPc9VaoZV9nIPbWZuIS.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/iA8jfCeiuxau8rBzHXJo.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/iA8jfCeiuxau8rBzHXJo.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/bUHhVW4nMikMnHKDswf7.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/bUHhVW4nMikMnHKDswf7.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/xwDTptS3pmoR0kS95lwk.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/xwDTptS3pmoR0kS95lwk.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/ogDramVpzZla4iz11d7N.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/ogDramVpzZla4iz11d7N.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/jzWmzWVtaBtwMFLROVed.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/jzWmzWVtaBtwMFLROVed.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/XPhx8NnamedyD5k2cK91.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/XPhx8NnamedyD5k2cK91.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/sl2URFOlKKlfbT06jVGo.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/sl2URFOlKKlfbT06jVGo.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/cGggLo5WraN2zxZjWhou.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/cGggLo5WraN2zxZjWhou.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    <a class="popup-link" href="https://cdn.d1b.pw/storage/page-items/July2020/puyfaQIFx4xdHAPcz6p6.jpg">
+    <div class="card overlay">
+    <img class="card-img-top gallery_img" title="" src="https://cdn.d1b.pw/storage/page-items/July2020/puyfaQIFx4xdHAPcz6p6.jpg" alt="">
+    <div class="mask"></div>
+    </div>
+    </a>
+    </div>
+    </section>
+</div>
+
+<!--Here ends the home page-->
+ <footer>
+   <div class="footer-wrap">
+     <p>© Moira.tv, all rights reserved.</p>
+   </div>
+
+
+ </footer>
+</div>
+<!--Main Container-->
+
+</main>
+
+
+</div>
+
+<div class="bottom-menu">
+<div><a href=""><i class="arrow-down"></i></a></div>
+<div><a href=""><i class="home"></i></a></div>
+<div> <a href=""><i class="community"></i></a></div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/swiper-bundle.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+const swiper = new Swiper('.Slider', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+autoplay: {
+delay: 3000,
+},
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+},
+});
+</script>
+<script>
+const swiperItems = new Swiper(".myApps", {
+slidesPerView: 4,
+spaceBetween:8,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+</script>
+<script>
+const swiperFilters = new Swiper(".myFilters", {
+slidesPerView: 6,
+spaceBetween: 8,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+</script>
+<script>
+const swiperTips = new Swiper(".myTips", {
+slidesPerView: 3,
+spaceBetween: 10,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+</script>
+<script>
+const swiperRecipes = new Swiper(".myRecipes", {
+slidesPerView: 3,
+spaceBetween: 30,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+
+</script>
+</body>
+
+</html>

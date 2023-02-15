@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moira</title>
+  <meta name="viewport" content="width=290, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <div id="logo"><a href="index.php?page=home"><img src="assets/images/logo.png"></a></div>
+    <label for="drop" class="toggle toggle-icon"><i class="menu-icon"></i></label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+        <li><a href="index.php?page=home">Home</a></li>
+        <li class="have-children"><a href="#">Videos</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Gallery</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Ringtones</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+        <li class="have-children"><a href="#">Apps</a>
+          <ul>
+            <li><a href="/play">Home</a></li>
+            <li><a href="/play/games">Games</a></li>
+            <li><a href="/play/articles">Articles</a></li>
+            <li><a href="/play/apps">Apps</a></li>
+          </ul>
+        </li>
+
+        <li><a href="index.php?page=contact">Contact</a></li>
+      <a href="" class="login  hidden-desktop"><button class="btn btn-login"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1Ni4zNjggNDU2LjM2OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTMyNC4xOTQsMjIwLjUyNmMtNi4xNzIsNy43NzItMTMuMTA2LDE0Ljk0Ny0yMS4wNywyMS40MjNjNDUuNDU5LDI2LjA3Niw3Ni4xNDksNzUuMSw3Ni4xNDksMTMxLjE1OCAgICAgYzAsMzAuMjktNjYuMzY3LDU0LjAxOC0xNTEuMDksNTQuMDE4cy0xNTEuMDktMjMuNzI4LTE1MS4wOS01NC4wMThjMC01Ni4wNTgsMzAuNjktMTA1LjA4Miw3Ni4xNDktMTMxLjE1OCAgICAgYy03Ljk2My02LjQ3Ni0xNC44OTctMTMuNjUtMjEuMDctMjEuNDIzYy01MC42MjQsMzEuOTY5LTg0LjMyMiw4OC40MS04NC4zMjIsMTUyLjU4MWMwLDE5LjQzOSwxMC42NDQsNDYuNTMsNjEuMzU1LDY1LjIwMSAgICAgYzMxLjYzMiwxMS42NDcsNzMuODg2LDE4LjA2LDExOC45NzksMTguMDZjNDUuMDkzLDAsODcuMzQ3LTYuNDEzLDExOC45NzktMTguMDZjNTAuNzEtMTguNjcxLDYxLjM1NS00NS43NjIsNjEuMzU1LTY1LjIwMSAgICAgQzQwOC41MTYsMzA4LjkzNiwzNzQuODE4LDI1Mi40OTUsMzI0LjE5NCwyMjAuNTI2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjI4LjE4MiwyMzkuNzk1YzU2LjgzMywwLDEwMC41OTctNTQuOTM2LDEwMC41OTctMTE5Ljg5N0MzMjguNzc5LDU0LjkwNywyODQuOTkzLDAsMjI4LjE4MiwwICAgICBjLTU2LjgzMywwLTEwMC41OTcsNTQuOTM2LTEwMC41OTcsMTE5Ljg5N0MxMjcuNTg1LDE4NC44ODgsMTcxLjM3MiwyMzkuNzk1LDIyOC4xODIsMjM5Ljc5NXogTTIyOC4xODIsMjkuMjQzICAgICBjMzkuMzQ0LDAsNzEuMzU0LDQwLjY2Nyw3MS4zNTQsOTAuNjU0cy0zMi4wMSw5MC42NTQtNzEuMzU0LDkwLjY1NHMtNzEuMzU0LTQwLjY2Ny03MS4zNTQtOTAuNjU0UzE4OC44MzgsMjkuMjQzLDIyOC4xODIsMjkuMjQzICAgICB6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPC9nPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=">
+        Login </button></a>
+    </ul>
+    <a href="" class="login hidden-mobile"><button class="btn btn-login"><img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1Ni4zNjggNDU2LjM2OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTMyNC4xOTQsMjIwLjUyNmMtNi4xNzIsNy43NzItMTMuMTA2LDE0Ljk0Ny0yMS4wNywyMS40MjNjNDUuNDU5LDI2LjA3Niw3Ni4xNDksNzUuMSw3Ni4xNDksMTMxLjE1OCAgICAgYzAsMzAuMjktNjYuMzY3LDU0LjAxOC0xNTEuMDksNTQuMDE4cy0xNTEuMDktMjMuNzI4LTE1MS4wOS01NC4wMThjMC01Ni4wNTgsMzAuNjktMTA1LjA4Miw3Ni4xNDktMTMxLjE1OCAgICAgYy03Ljk2My02LjQ3Ni0xNC44OTctMTMuNjUtMjEuMDctMjEuNDIzYy01MC42MjQsMzEuOTY5LTg0LjMyMiw4OC40MS04NC4zMjIsMTUyLjU4MWMwLDE5LjQzOSwxMC42NDQsNDYuNTMsNjEuMzU1LDY1LjIwMSAgICAgYzMxLjYzMiwxMS42NDcsNzMuODg2LDE4LjA2LDExOC45NzksMTguMDZjNDUuMDkzLDAsODcuMzQ3LTYuNDEzLDExOC45NzktMTguMDZjNTAuNzEtMTguNjcxLDYxLjM1NS00NS43NjIsNjEuMzU1LTY1LjIwMSAgICAgQzQwOC41MTYsMzA4LjkzNiwzNzQuODE4LDI1Mi40OTUsMzI0LjE5NCwyMjAuNTI2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjI4LjE4MiwyMzkuNzk1YzU2LjgzMywwLDEwMC41OTctNTQuOTM2LDEwMC41OTctMTE5Ljg5N0MzMjguNzc5LDU0LjkwNywyODQuOTkzLDAsMjI4LjE4MiwwICAgICBjLTU2LjgzMywwLTEwMC41OTcsNTQuOTM2LTEwMC41OTcsMTE5Ljg5N0MxMjcuNTg1LDE4NC44ODgsMTcxLjM3MiwyMzkuNzk1LDIyOC4xODIsMjM5Ljc5NXogTTIyOC4xODIsMjkuMjQzICAgICBjMzkuMzQ0LDAsNzEuMzU0LDQwLjY2Nyw3MS4zNTQsOTAuNjU0cy0zMi4wMSw5MC42NTQtNzEuMzU0LDkwLjY1NHMtNzEuMzU0LTQwLjY2Ny03MS4zNTQtOTAuNjU0UzE4OC44MzgsMjkuMjQzLDIyOC4xODIsMjkuMjQzICAgICB6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPC9nPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=">
+  Login </button></a>
+</nav>
+</header>
+    <main>
+     <div class="swiper-container Slider">
+      <video controls>
+        <source src="https://cdn.d1b.pw/storage/apps/July2021/X22YeYfk2oBxEezBXLbx.mp4" type="video/mp4">
+     
+      Your browser does not support the video tag.
+      </video> 
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+      <div class="container">
+        <!--Here starts the home page-->
+        <div class="content">
+
+          <a class="back"><i class="arrow-down"></i> <span>Back</span></a>
+        
+           <div class="app-description"><h3>Bruno Mars - that's what I like </h3>       
+         </div>
+         <p class="single-description">Song by American singer-songwriter Bruno Mars from his third studio album, 24K Magic (2016)</p>
+       
+
+     <section class="more-like-this">
+      <div class="title-section">
+        <h3> More like this:</h3>
+      </div>
+
+      <div class="swiper-container myTips">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+          <div class="swiper-slide"><a href="">
+              <h3>Bruno Mars - Thats what I like</h3><img src="assets/images/stream/bruno-mars.jpg">
+            </a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+     </section>
+        </div>
+
+         <!--Here ends the home page-->
+          <footer>
+            <div class="footer-wrap">
+              <p>© Moira.tv, all rights reserved.</p>
+            </div>
+
+
+          </footer>
+        </div>
+        <!--Main Container-->
+
+    </main>
+  <div class="bottom-menu">
+    <div><a href=""><i class="arrow-down"></i></a></div>
+    <div><a href=""><i class="home"></i></a></div>
+    <div> <a href=""><i class="community"></i></a></div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.Slider', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+  
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+  <script>
+    var swiperItems = new Swiper(".myApps", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 3.5,
+        spaceBetween:20,
+        },
+        "@0.75": {
+          slidesPerView: 5,
+          spaceBetween: 60,
+        },
+        "@1.00": {
+          slidesPerView:6,
+          spaceBetween: 4,
+        },
+        "@1.50": {
+          slidesPerView: 6,
+          spaceBetween:8,
+        },
+      },
+    });
+  </script>
+  <script>
+    var swiperTips = new Swiper(".myTips", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 2,
+        spaceBetween:20,
+        },
+        "@0.75": {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        "@1.00": {
+          slidesPerView:3,
+          spaceBetween: 4,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween:10,
+        },
+      },
+    });
+  </script>
+  <script>
+    var swiperRecipes = new Swiper(".myRecipes", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 2,
+        spaceBetween:20,
+        },
+        "@0.75": {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        "@1.00": {
+          slidesPerView:3,
+          spaceBetween: 4,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween:8,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
